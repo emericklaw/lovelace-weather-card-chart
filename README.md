@@ -21,14 +21,15 @@ Then you can add the card to the view:
 
 #### Configuration variables:
 
-| Name     | Optional | Description                                                                                        |
-| -------- | -------- | -------------------------------------------------------------------------------------------------- |
-| type     | **No**   | Should be `'custom:weather-card-chart'`                                                            |
-| title    | Yes   | Default value: ``. Card title                                                                                         |
-| weather  | **No***   | An entity_id with the `weather` domain. Use only one: 'weather' or 'entity' option.                                                             |
-| entity  | **No***   | (For backward compatibility with Weather Forecast Card) An entity_id with the `weather` domain. Use only one: 'weather' or 'entity' option.                                                             |
-| temp     | Yes      | Entity_id of the temperature sensor. Show temperature value from sensor instead                    |
-| mode     | Yes      | Default value: `daily`. Set mode to `hourly` to display hours instead weekdays on the chart        |
-| wind_unit | Yes      | Default value: `ms`. Set wind_unit to `kmh` to display wind speed in km/h        |
-| pressure2mmhg | Yes      | Default value: False. Set pressure2mmhg to True to display pressure in mmHg        |
-| chart_only | Yes      | Default value: False. Set chart_only to True to display only temperature chart        |
+| Name          | Optional | Description                                                                                        |
+| ------------- | -------- | -------------------------------------------------------------------------------------------------- |
+| type          | **No**   | Should be `'custom:weather-card-chart'`                                                            |
+| title         | Yes      | Default value: ``. Card title                                                                      |
+| weather       | **No***  | An entity_id with the `weather` domain. Use only one: 'weather' or 'entity' option.                |
+| entity        | **No***  | (For backward compatibility with Weather Forecast Card) An entity_id with the `weather` domain. Use only one: 'weather' or 'entity' option.                                                             |
+| temp          | Yes      | Entity_id of the temperature sensor. Show temperature value from sensor instead                    |
+| mode          | Yes      | Default value: `daily`. Set mode to `hourly` to display hours instead weekdays on the chart        |
+| wind_unit     | Yes      | Default value: `ms`. Set wind_unit to `kmh` to display wind speed in km/h                          |
+| pressure2mmhg | Yes      | Default value: False. Set pressure2mmhg to True to display pressure in mmHg                        |
+| chart_only    | Yes      | Default value: False. Set chart_only to True to display only temperature chart                     |
+| data_points   | Yes      | Default value: `12` when mode is `hourly` and `7` for `daily`                                      |
